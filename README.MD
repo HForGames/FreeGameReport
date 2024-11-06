@@ -17,7 +17,7 @@ A simple web extension that helps you change the button game review on chess.com
 
 - Unzip the extension
 - Make sure **Developer mode** is enabled
-- In the parent directory of the extension, run the following command : `chromium --pack-extension=TwitchNoSub`
+- In the parent directory of the extension, run the following command : `chromium --pack-extension=free_game_report`
 - Drop the created crx file in the extensions page of your browser
 
 ### Firefox
