@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Free Game Report",
-  "version": "0.0.3",
+  "version": "0.0.4",
 
   "description": "Redirects to chess.wintrcat.uk when you click to the button game review on chess.com",
 
@@ -13,7 +13,7 @@
 
   "content_scripts": [
     {
-      "matches": ["https://*.chess.com/game/live/*"],
+      "matches": ["https://*.chess.com/game/*"],
       "js": ["override-report-button.js"]
     },
     {
