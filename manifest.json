@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Free Game Report",
+  "version": "0.0.2",
+
+  "description": "Redirects to chess.wintrcat.uk when you click to the button game review on chess.com",
+
+  "icons": {
+    "48": "icons/border-48.png",
+    "96": "icons/border-96.png"
+  },
+  "permissions": ["activeTab", "storage"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.chess.com/game/live/*"],
+      "js": ["override-report-button.js"]
+    },
+    {
+        "matches": ["https://*.chess.wintrcat.uk/*"],
+        "js": ["automatically-put-pgn.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "contact@hgalan.dev",
+      "strict_min_version": "58.0"
+    }
+  }
+}
