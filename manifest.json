@@ -13,7 +13,7 @@
 
   "content_scripts": [
     {
-      "matches": ["https://*.chess.com/game/*"],
+      "matches": ["https://*.chess.com/*"],
       "js": ["override-report-button.js"]
     },
     {
